@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<script src="javascript/javascript.js"></script>
+	<script src="javascript/m.touch.js"></script>
+<script>
+var i=0;
+i=window.devicePixelRatio>1?1/window.devicePixelRatio:1;
+document.write('<meta name="viewport" content="width=device-width,initial-scale='+i+',minimum-scale='+i+',maximum-scale='+i+',user-scalable=no" />');
+</script>
+	<title>Document</title>
+
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header class="head clear">
+		<span class="logo"></span>
+		<form action="">
+			<input class="text" type="text" value="尾品汇">
+			<input class="button" type="button">
+			<span class="buttonbg"></span>
+		</form>
+		<a href="#" class="classification">
+			分类
+			<span class="classificationBg"></span>
+		</a>
+	</header>
+	<div class="wrap">
+		<div class="scroll clear" id="scroll">
+			<ul class="scrollBox">
+				<li>
+					<a href="#">
+						<img src="img/scroll1.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/scroll2.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/scroll3.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/scroll4.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/scroll5.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/scroll6.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/scroll1.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/scroll2.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/scroll3.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/scroll4.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/scroll5.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/scroll6.png">
+					</a>
+				</li>
+			</ul>
+			<span class="mask clear">
+				<span class="dot active"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+				<span class="dot"></span>
+			</span>
+		</div>
+		<nav class="menu clear">
+			<a href="#">
+				<span class="menubg menubg1"></span>
+				<h2>分类</h2>
+			</a>
+			<a href="#">
+				<span class="menubg menubg2"></span>
+				<h2>立减5元</h2>
+			</a>
+			<a href="#">
+				<span class="menubg menubg3"></span>
+				<h2>购物车</h2>
+			</a>
+			<a href="#">
+				<span class="menubg menubg4"></span>
+				<h2>我的当当</h2>
+			</a>
+			<a href="#">
+				<span class="menubg menubg5"></span>
+				<h2>好书榜</h2>
+			</a>
+			<a href="#">
+				<span class="menubg menubg6"></span>
+				<h2>童书榜</h2>
+			</a>
+			<a href="#">
+				<span class="menubg menubg7"></span>
+				<h2>9块9</h2>
+			</a>
+			<a href="#">
+				<span class="menubg menubg8"></span>
+				<h2>电子书</h2>
+			</a>
+		</nav>
+		<section class="second">
+			<h2>秒杀
+				<div class="timer clear">
+					<span class="timerBg"></span>
+					<span class="number">0</span>
+					<span class="number">0</span>
+					<span class="symbol">:</span>
+					<span class="number">4</span>
+					<span class="number">6</span>
+					<span class="symbol">:</span>
+					<span class="number">4</span>
+					<span class="number">6</span>
+				</div>
+			</h2>
+			<ul class="secondBox clear">
+				<li>
+					<a href="#">
+						<img src="img/second1.png">
+					</a>
+					<strong>￥1.00</strong>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/second2.png">
+					</a>
+					<strong>￥1.00</strong>
+				</li>
+				<li>
+					<a href="#">
+						<img src="img/second3.png">
+					</a>
+					<strong>￥52.10</strong>
+				</li>
+			</ul>
+		</section>
+		<div class="banner">
+			<div class="bannerBox">
+				<a href="#">
+					<img src="img/banner1.png">
+				</a>
+				<a href="#">
+					<img src="img/banner2.png">
+				</a>
+			</div>
+
+			<span class="mask">
+				<span class="dot active"></span>
+				<span class="dot"></span>
+			</span>
+		</div>
+		<ul class="ulBox">
+			<li class="ulList1">
+				<header class="clear">
+					<h2>最值当</h2>
+					<a class="more" href="#">
+						更多
+						<span class="morebg"></span>
+					</a>
+				</header>
+				<div class="ulBoxBody clear">
+					<div class="left">
+						<img src="img/ulBoxLeft1.png">
+						<span class="mask"></span>
+						<p class="text text1">
+							<strong class="line1">最值当</strong>
+							<span class="line2">百于专柜大牌</span>
+							<span class="line3">
+								<span>全网限量最低价</span>
+							</span>
+						</p>
+					</div>
+					<div class="right1 right">
+						<img src="img/ulBoxRight1.png">
+						<dl class="text text2">
+							<dt class="line1">春装上新</dt>
+							<dd class="line2">全场<span class="red">35.9元起</span></dd>
+						</dl>
+					</div>
+					<div class="right2 right">
+						<img src="img/ulBoxRight2.png">
+						<dl class="text text2">
+							<dt class="line1">鸿星尔克童鞋</dt>
+							<dd class="line2">全场<span class="red">满199减20</span></dd>
+						</dl>
+					</div>
+				</div>
+			</li>
+			<li class="ulList2">
+				<header class="clear">
+					<h2>尾品汇</h2>
+					<a class="more" href="#">
+						更多
+						<span class="morebg"></span>
+					</a>
+				</header>
+				<div class="ulBoxBody clear">
+					<div class="left">
+						<img src="img/ulBoxLeft1.png">
+						<span class="mask"></span>
+						<p class="text text1">
+							<strong class="line1">尾品汇</strong>
+							<span class="line2">3.9折封顶</span>
+							<span class="line3">
+								<span>每日10：00上新</span>
+							</span>
+						</p>
+					</div>
+					<div class="right1 right">
+						<img src="img/ulBoxRight3.png">
+						<dl class="text text2">
+							<dt class="line1">图书</dt>
+							<dd class="line2">2.9折特惠</dd>
+						</dl>
+					</div>
+					<div class="right2 right">
+						<img src="img/ulBoxRight4.png">
+						<dl class="text text2">
+							<dt class="line1">巴拉巴拉</dt>
+							<dd class="line2">开学季满399减50</dd>
+							<dd class="line2">领券在满减</dd>
+						</dl>
+					</div>
+				</div>
+			</li>
+			<li class="ulList3">
+				<header class="clear">
+					<h2>发现好书</h2>
+					<a class="more" href="#">
+						更多
+						<span class="morebg"></span>
+					</a>
+				</header>
+				<div class="ulBoxBody clear">
+					<div class="left">
+						<img src="img/ulBoxLeft3.png">
+						<dl class="text2">
+							<dt class="line1">向上吧少年</dt>
+							<dd class="line2 red">满100减30 满200减60</dd>
+							<dd class="line3 red">满300减100</dd>
+						</dl>
+					</div>
+					<div class="right1 right">
+						<img src="img/ulBoxRight5.png">
+						<dl class="text text2">
+							<dt class="line1">考试图书</dt>
+							<dd class="line2 red">满300减100</dd>
+						</dl>
+					</div>
+					<div class="right2 right">
+						<img src="img/ulBoxRight6.png">
+						<dl class="text text2">
+							<dt class="line1">外语图书</dt>
+							<dd class="line2 red">满300减100</dd>
+						</dl>
+					</div>
+				</div>
+			</li>
+			<li class="ulList4">
+				<header class="clear">
+					<h2>缤纷童书</h2>
+					<a class="more" href="#">
+						更多
+						<span class="morebg"></span>
+					</a>
+				</header>
+				<div class="ulBoxBody clear">
+					<div class="left">
+						<img src="img/ulBoxLeft4.png">
+						<dl class="text2">
+							<dt class="line1">童书5折封顶</dt>
+							<dd class="line2 red">再满300减100</dd>
+						</dl>
+					</div>
+					<div class="right1 right">
+						<img src="img/ulBoxRight7.png">
+						<dl class="text text2">
+							<dt class="line1">分级阅读</dt>
+							<dd class="line2 red">满100减30</dd>
+							<dd class="line3 red">满200减60</dd>
+						</dl>
+					</div>
+					<div class="right2 right">
+						<img src="img/ulBoxRight8.png">
+						<dl class="text text2">
+							<dt class="line1">名社好书</dt>
+							<dd class="line2 red">满200减100</dd>
+						</dl>
+					</div>
+				</div>
+			</li>
+			<li class="ulList5">
+				<header class="clear">
+					<h2>潮流服饰</h2>
+					<a class="more" href="#">
+						更多
+						<span class="morebg"></span>
+					</a>
+				</header>
+				<div class="ulBoxBody clear">
+					<div class="left">
+						<img src="img/ulBoxLeft5.png">
+						<span class="img"></span>
+						<dl class="text2">
+							<dt class="line1">开学换新衣</dt>
+							<dd class="line2 red">低至9.9元</dd>
+						</dl>
+					</div>
+					<div class="right1 right">
+						<img src="img/ulBoxRight9.png">
+						<dl class="text text2">
+							<dt class="line1">韩都衣舍春衣热卖</dt>
+							<dd class="line2 red">满599减200</dd>
+						</dl>
+					</div>
+					<div class="right2 right">
+						<img src="img/ulBoxRight10.png">
+						<dl class="text text2">
+							<dt class="line1">百丽春钜惠</dt>
+							<dd class="line2">全场<span class="red">折后满减</span></dd>
+						</dl>
+					</div>
+				</div>
+			</li>
+			<li class="ulList6">
+				<header class="clear">
+					<h2>运动▪亲子</h2>
+					<a class="more" href="#">
+						更多
+						<span class="morebg"></span>
+					</a>
+				</header>
+				<div class="ulBoxBody clear">
+					<div class="left">
+						<img src="img/ulBoxLeft6.png">
+						<span class="img"></span>
+						<dl class="text2">
+							<dt class="line1">十足学院派</dt>
+							<dd class="line2 red">全场19元起</dd>
+						</dl>
+					</div>
+					<div class="right1 right">
+						<img src="img/ulBoxRight11.png">
+						<dl class="text text2">
+							<dt class="line1">阿迪达斯</dt>
+							<dd class="line2">全场49元起</dd>
+						</dl>
+					</div>
+					<div class="right2 right">
+						<img src="img/ulBoxRight12.png">
+						<dl class="text text2">
+							<dt class="line1">巴拉巴拉开学季</dt>
+							<dd class="line2 red">低至<span class="red">19元</span></dd>
+						</dl>
+					</div>
+				</div>
+			</li>
+			<li class="ulList7">
+				<header class="clear">
+					<h2>早春新品</h2>
+					<a class="more" href="#">
+						更多
+						<span class="morebg"></span>
+					</a>
+				</header>
+				<div class="ulBoxBody clear">
+					<div class="left">
+						<img src="img/ulBoxLeft7.png">
+						<span class="img"></span>
+						<dl class="text2">
+							<dt class="line1">校园搭配专场</dt>
+							<dd class="line2 red">新款5折来袭</dd>
+						</dl>
+					</div>
+					<div class="right1 right">
+						<img src="img/ulBoxRight13.png">
+						<dl class="text text2">
+							<dt class="line1">浓浓校园风</dt>
+							<dd class="line2">全场<span class="red">19元起</span></dd>
+						</dl>
+					</div>
+					<div class="right2 right">
+						<img src="img/ulBoxRight14.png">
+						<dl class="text text2">
+							<dt class="line1">开学单品热卖</dt>
+							<dd class="line2 red">全场<span class="red">低至19元</span></dd>
+						</dl>
+					</div>
+				</div>
+			</li>
+			<li class="ulList8">
+				<header class="clear">
+					<h2>Baby&Child</h2>
+					<a class="more" href="#">
+						更多
+						<span class="morebg"></span>
+					</a>
+				</header>
+				<div class="ulBoxBody clear">
+					<div class="left">
+						<img src="img/ulBoxLeft8.png">
+						<span class="img"></span>
+						<dl class="text2">
+							<dt class="line1">帮宝宝欢乐过大年</dt>
+							<dd class="line2 red">买指定nb/s纸尿裤&nbsp;送湿巾</dd>
+						</dl>
+					</div>
+					<div class="right1 right">
+						<img src="img/ulBoxRight15.png">
+						<dl class="text text2">
+							<dt class="line1">新春开学季</dt>
+							<dd class="line2">文具满99减30</dd>
+						</dl>
+					</div>
+					<div class="right2 right">
+						<img src="img/ulBoxRight16.png">
+						<dl class="text text2">
+							<dt class="line1">宝宝舒适沐浴</dt>
+							<dd class="line2 red">部分满59减10</dd>
+						</dl>
+					</div>
+				</div>
+			</li>
+			<li class="ulList9">
+				<header class="clear">
+					<h2>腔调生活</h2>
+					<a class="more" href="#">
+						更多
+						<span class="morebg"></span>
+					</a>
+				</header>
+				<div class="ulBoxBody clear">
+					<div class="left">
+						<img src="img/ulBoxLeft9.png">
+						<dl class="text2">
+							<dt class="line1">宝洁购物狂欢节</dt>
+							<dd class="line2 red">疯狂钜惠&nbsp;爆款直降</dd>
+						</dl>
+					</div>
+					<div class="right1 right">
+						<img src="img/ulBoxRight17.png">
+						<dl class="text text2">
+							<dt class="line1">1号店闹元宵</dt>
+							<dd class="line2 red">爆款低至9.9元</dd>
+						</dl>
+					</div>
+					<div class="right2 right">
+						<img src="img/ulBoxRight18.png">
+						<dl class="text text2">
+							<dt class="line1">苹果apple</dt>
+							<dd class="line2">
+								满
+								<span class="red">300减20</span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</li>
+			<li class="ulList10">
+				<header class="clear">
+					<h2>当当优品</h2>
+					<a class="more" href="#">
+						更多
+						<span class="morebg"></span>
+					</a>
+				</header>
+				<div class="ulBoxBody clear">
+					<div class="left">
+						<img src="img/ulBoxLeft10.png">
+						<dl class="text2">
+							<dt class="line1">天然蜂蜜手工皂</dt>
+							<dd class="line2 red">祛痘去鸡皮19疯抢</dd>
+						</dl>
+					</div>
+					<div class="right1 right">
+						<img src="img/ulBoxRight19.png">
+						<dl class="text text2">
+							<dt class="line1">N.S.N.F潮男羽绒服</dt>
+							<dd class="line2 red">满减上下不封顶</dd>
+						</dl>
+					</div>
+					<div class="right2 right">
+						<img src="img/ulBoxRight20.png">
+						<dl class="text text2">
+							<dt class="line1">不锈钢保温杯</dt>
+							<dd class="line2">
+								500ML仅售
+								<span class="red">29元</span>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</li>
+		</ul>
+		<section class="theme">
+			<h2>主题馆</h2>
+			<div class="themeBox">
+				<ul class="clear">
+					<li class="themeList">
+						<a href="#">
+							<div class="themeLeft">
+								<h3>图书</h3>
+								<p>当当图书榜发布</p>
+							</div>
+							<div class="themeRight">
+								<img src="img/themel1.png">
+							</div>
+						</a>
+					</li>
+					<li class="themeList">
+						<a href="#">
+							<div class="themeLeft">
+								<h3>童书</h3>
+								<p>给孩子全新视角</p>
+							</div>
+							<div class="themeRight">
+								<img src="img/themel2.png">
+							</div>
+						</a>
+					</li>
+					<li class="themeList">
+						<a href="#">
+							<div class="themeLeft">
+								<h3>女装内衣</h3>
+								<p>活力&nbsp;时尚&nbsp;优雅</p>
+							</div>
+							<div class="themeRight">
+								<img src="img/themel3.png">
+							</div>
+						</a>
+					</li>
+					<li class="themeList">
+						<a href="#">
+							<div class="themeLeft">
+								<h3>男装</h3>
+								<p>休闲&nbsp;商务&nbsp;潮牌</p>
+							</div>
+							<div class="themeRight">
+								<img src="img/themel4.png">
+							</div>
+						</a>
+					</li>
+					<li class="themeList">
+						<a href="#">
+							<div class="themeLeft">
+								<h3>鞋包配饰</h3>
+								<p>品质&nbsp;细节&nbsp;潮流</p>
+							</div>
+							<div class="themeRight">
+								<img src="img/themel5.png">
+							</div>
+						</a>
+					</li>
+					<li class="themeList">
+						<a href="#">
+							<div class="themeLeft">
+								<h3>运动户外</h3>
+								<p>挥洒青春</p>
+							</div>
+							<div class="themeRight">
+								<img src="img/themel6.png">
+							</div>
+						</a>
+					</li>
+					<li class="themeList">
+						<a href="#">
+							<div class="themeLeft">
+								<h3>家居家纺</h3>
+								<p>我们结婚吧</p>
+							</div>
+							<div class="themeRight">
+								<img src="img/themel7.png">
+							</div>
+						</a>
+					</li>
+					<li class="themeList">
+						<a href="#">
+							<div class="themeLeft">
+								<h3>孕婴童</h3>
+								<p>尿裤直降贴心价</p>
+							</div>
+							<div class="themeRight">
+								<img src="img/themel8.png">
+							</div>
+						</a>
+					</li>
+					<li class="themeList">
+						<a href="#">
+							<div class="themeLeft">
+								<h3>手机数码</h3>
+								<p>iPhone6s同步发售</p>
+							</div>
+							<div class="themeRight">
+								<img src="img/themel9.png">
+							</div>
+						</a>
+					</li>
+					<li class="themeList">
+						<a href="#">
+							<div class="themeLeft">
+								<h3>食品</h3>
+								<p>吃货挚爱美食</p>
+							</div>
+							<div class="themeRight">
+								<img src="img/themel10.png">
+							</div>
+						</a>
+					</li>
+					<li class="themeList">
+						<a href="#">
+							<div class="themeLeft">
+								<h3>美妆</h3>
+								<p>护肤彩妆奢养之选</p>
+							</div>
+							<div class="themeRight">
+								<img src="img/themel11.png">
+							</div>
+						</a>
+					</li>
+					<li class="themeList">
+						<a href="#">
+							<div class="themeLeft">
+								<h3>家用电器</h3>
+								<p>清新空气抗过敏</p>
+							</div>
+							<div class="themeRight">
+								<img src="img/themel12.png">
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<div class="load clear">
+			<a href="#">登录</a>
+			<a href="#">注册</a>
+			<a class="top" href="#scroll">TOP</a>
+			<span class="topbg"></span>
+		</div>
+		<footer class="foot">
+			<div class="foottop clear">
+				<a href="#">提建议</a>
+				<a href="#" class="active">触屏版</a>
+				<a href="#">电脑版</a>
+				<a href="#">帮&nbsp;&nbsp;助</a>
+			</div>
+			<p>Copyright&nbsp;当当&nbsp;2016&nbsp;m.dangdang.com</p>
+		</footer>
+	</div>
+</body>
+</html>
